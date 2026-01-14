@@ -1,3 +1,9 @@
-body {
-  margin: 0;
-}
+@import 'variables';
+@import 'reset';
+@import 'menu';
+@import 'info';
+@import 'contact';
+@import 'page';
+@import 'recomended';
+@import 'categories';
+@import 'about';
