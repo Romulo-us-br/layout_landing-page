@@ -1,0 +1,22 @@
+@use '../utils/mixin' as *;
+@use '../utils/variables' as *;
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.icon--phone {
+  background-image: url(/src/styles/img/icon/icon-phone-call.png);
+}
+
+.icon--menu {
+  background-image: url(/src/styles/img/icon/icon-burger-menu.png);
+}
+
+.icon--close {
+  background-image: url(/src/styles/img/icon/icon-close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

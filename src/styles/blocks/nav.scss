@@ -1,0 +1,22 @@
+@use '../utils/mixin' as *;
+@use '../utils/variables' as *;
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  color: inherit;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav__item {
+  margin-top: 32px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}

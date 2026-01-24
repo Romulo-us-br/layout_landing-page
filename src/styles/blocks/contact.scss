@@ -1,0 +1,65 @@
+@use '../utils/variables' as *;
+@use '../utils/mixin' as *;
+
+.contact {
+  margin-top: 64px;
+  gap: 16px;
+
+  @include page-grid;
+  @include content-padd;
+
+  &-title {
+    grid-column: span 2;
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      grid-column: 1/-1;
+    }
+  }
+
+  &__form {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include on-tablet {
+      grid-column: span 6;
+    }
+  }
+
+  &-input {
+    height: 48px;
+    border-radius: $radiusb;
+
+    &:hover {
+      border: 1px solid $border-hover;
+    }
+  }
+
+  &-textarea {
+    padding: 16px;
+    border-radius: $radiusb;
+    height: 148px;
+    grid-column: span 2;
+    font-family: inherit;
+
+    &:hover {
+      border: 1px solid $border-hover;
+    }
+  }
+
+  &-button {
+    width: 100%;
+    background-color: $escuro;
+    color: $branc;
+    grid-column: span 2;
+    height: 56px;
+    margin-block: 16px 48px;
+    border-radius: $radiusb;
+
+    &:hover {
+      background-color: $but-press;
+    }
+  }
+}
