@@ -53,3 +53,60 @@
     background-color: $escuro;
   }
 }
+
+@mixin manrope-400 {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+}
+
+@mixin manrope-bold {
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+}
+
+@mixin normal-text {
+  @include manrope-400;
+
+  line-height: 140%;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: #1B2129;
+
+  @include on-tablet {
+    font-size: 18px;
+  }
+
+  @include on-desktop {
+    font-size: 22px;
+  }
+}
+
+@mixin subtitle-text {
+  letter-spacing: 0;
+  font-size: 18px;
+
+  @include manrope-bold;
+
+  @include on-tablet {
+    font-size: 20px;
+  }
+
+  @include on-desktop {
+    font-size: 24px;
+  }
+
+}
+
+@mixin title-text {
+  font-size: 32px;
+
+  @include manrope-bold;
+
+  @include on-tablet {
+    font-size: 40px;
+  }
+
+  @include on-desktop {
+    font-size: 44px;
+  }
+}

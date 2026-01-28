@@ -6,7 +6,10 @@
   height: 200px;
   display: block;
   object-fit: cover;
-
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  
   @include on-tablet {
     height: 400px;
   }
@@ -30,8 +33,9 @@
 
   &-title {
     grid-column: span $column;
-    font-size: 32px;
-    font-weight: bold;
+
+    @include title-text;
+
     margin-bottom: 24px;
 
     @include on-tablet {
@@ -41,8 +45,6 @@
     }
 
     @include on-desktop {
-      font-size: 48px;
-      line-height: 48px;
       grid-column: span 6;
     }
   }

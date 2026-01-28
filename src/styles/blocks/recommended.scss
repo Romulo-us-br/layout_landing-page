@@ -9,12 +9,9 @@
 
   &-title {
     grid-column: 1/-1;
-    font-size: 18px;
-    font-weight: bold;
 
-    @include on-tablet {
-      font-size: 40px;
-    }
+    @include title-text;
+    
   }
 
   &__prod {

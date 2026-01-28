@@ -9,9 +9,7 @@
   @include page-grid;
   @include content-padd;
 
-  position: sticky;
-  bottom: 0;
-  z-index: -1;
+  
 
   &-title {
     grid-column: span 2;
@@ -39,6 +37,7 @@
     padding-left: 16px;
     border: none;
     outline: none; // Remove a borda azul padrão do navegador
+    background-color: #F9F9F9;
     transition:border-color 0.3 ease;
 
     &:hover {
@@ -54,6 +53,7 @@
     padding: 16px;
     border-radius: $radiusb;
     height: 148px;
+    background-color: #F9F9F9;
     grid-column: span 2;
     font-family: inherit;
     border: none;
