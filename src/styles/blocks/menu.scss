@@ -7,6 +7,9 @@
   left: 0;
   top: 0;
   background-color: #fff;
+  overflow: auto;
+
+  /* to scroll the menu if needed */
 
   box-sizing: border-box;
   padding: 24px 20px 40px;
@@ -30,8 +33,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
   }
 }
+
 
 // #endregion
 // #region aside
@@ -42,15 +47,15 @@
 }
 
 .menu__call-to-order {
-  display: inline-block;
-  text-transform: uppercase;
   align-self: flex-start;
+    text-transform: uppercase;
 
-  border-bottom: 2px solid $escuro;
   padding-bottom: 4px;
   margin-top: 16px;
 }
 
 .menu__phone-number {
+  align-self: flex-start;
+
   margin-top: 48px;
 }

@@ -38,3 +38,18 @@
     --columns: 12;
   }
 }
+
+// padrao do botao
+
+@mixin button-page {
+  width: 100%;
+  color: $branc;
+  height: 56px;
+  border-radius: $radiusb;
+  border: none;
+  background-color: #F98921;
+
+  &:hover {
+    background-color: $escuro;
+  }
+}

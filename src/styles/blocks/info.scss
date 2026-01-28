@@ -17,5 +17,9 @@
 
   &-desc {
     color: $info-desc;
+
+    &:hover{
+      color:#54545e;
+    }
   }
 }

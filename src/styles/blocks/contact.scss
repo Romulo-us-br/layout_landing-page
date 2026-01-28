@@ -4,9 +4,14 @@
 .contact {
   margin-top: 64px;
   gap: 16px;
+  pointer-events: all;
 
   @include page-grid;
   @include content-padd;
+
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
 
   &-title {
     grid-column: span 2;
@@ -32,8 +37,16 @@
     height: 48px;
     border-radius: $radiusb;
     padding-left: 16px;
+    border: none;
+    outline: none; // Remove a borda azul padrão do navegador
+    transition:border-color 0.3 ease;
+
     &:hover {
       border: 1px solid $border-hover;
+    }
+
+    &:focus {
+      border: 1px solid $but-orang;
     }
   }
 
@@ -43,23 +56,26 @@
     height: 148px;
     grid-column: span 2;
     font-family: inherit;
+    border: none;
+    outline: none; // Remove a borda azul padrão do navegador
+    transition:all 0.3 ease;
 
     &:hover {
       border: 1px solid $border-hover;
+    }
+
+    &:focus {
+      border: 1px solid $but-orang;
     }
   }
 
   &-button {
     width: 100%;
-    background-color: $escuro;
-    color: $branc;
     grid-column: span 2;
-    height: 56px;
     margin-block: 16px 48px;
-    border-radius: $radiusb;
 
-    &:hover {
-      background-color: $but-press;
-    }
+    @include button-page;
+
   }
+
 }

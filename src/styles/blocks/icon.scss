@@ -9,10 +9,23 @@
 
 .icon--phone {
   background-image: url(/src/styles/img/icon/icon-phone-call.png);
+
+  @include on-desktop {
+    &:hover+.header__top-left-tel {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+
 }
 
 .icon--menu {
   background-image: url(/src/styles/img/icon/icon-burger-menu.png);
+
+  &:hover {
+    background-image: url(/src/styles/img/icon/icon-burger-menu-hover.png);
+  }
 }
 
 .icon--close {
